@@ -1,3 +1,5 @@
+'use strict';
+
 var counter = process.argv[2],
 	countries = {},
 	through = require('through'),
