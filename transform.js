@@ -4,7 +4,7 @@ var through = require('through'),
 transform = through(function write(data) {
         this.queue(data.toString().toUpperCase());
     },
-    function end () { //optional
+    function end() { //optional
         this.queue(null);
     }
 );
